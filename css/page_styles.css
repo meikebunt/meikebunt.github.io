@@ -138,3 +138,9 @@ a:active {
   background: black;
   margin-top: 35px;
 }
+.sidebar-home{
+  height: 490px;
+}
+.home-main-image{
+  width: 705px;
+}
