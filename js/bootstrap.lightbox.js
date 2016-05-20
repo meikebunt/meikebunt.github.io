@@ -256,6 +256,8 @@ Licensed under the Creative Commons Attribution 2.5 License - http://creativecom
       var $lightbox;
       $lightbox = $("#lightbox");
       $lightbox.find(".lb-loader").hide();
+      $(".lb-image").height($(window).height()-200);
+      $(".lb-outerContainer").width($(".lb-image").width()-10);
       $lightbox.find(".lb-image").fadeIn("slow");
       this.updateNav();
       this.updateDetails();
