@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+
+  <meta charset="utf-8">
+  <title>Meike Bunt</title>
+
+  <meta name="description" lang="en" content="Photography" />
+  <meta name="author" content="Meike Bunt">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="shortcut icon" type="image/ico" href="favicon.png" />
+
+  <link href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.1/css/bootstrap.min.css" rel="stylesheet" media="screen">
+  <link href="css/bootstrap.lightbox.css" rel="stylesheet" media="screen">
+  <link href="css/page_styles.css" rel="stylesheet" media="screen">
+</head>
+<body data-spy="scroll" data-target=".navbar">
+<div class="container">
+  <section id="main">
+
+    <div class="sidebar">
+      <div class="sidebar-content">
+        <p><b> Meike Bunt </b></p>
+        <p class="subtitle"> PHOTOGRAPHY </p>
+      </div>
+    </div>
+    <div class="gallery">
+        <ul class="thumbnails" data-toggle="lightbox">
+            <li class="span3"><a href="img/nudes/1.jpg" title="" data-title-link="" data-description="" class="thumbnail"><img src="img/nudes/1.jpg" alt=""/></a></li>
+            <li class="span3"><a href="img/nudes/2.jpg" title="" data-title-link="" data-description="" class="thumbnail"><img src="img/nudes/2.jpg" alt=""/></a></li>
+            <li class="span3"><a href="img/nudes/3.jpg" title="" data-title-link="" data-description="" class="thumbnail"><img src="img/nudes/3.jpg" alt=""/></a></li>
+            <li class="span3"><a href="img/nudes/4.jpg" title="" data-title-link="" data-description="" class="thumbnail"><img src="img/nudes/4.jpg" alt=""/></a></li>
+            <li class="span3"><a href="img/nudes/5.jpg" title="" data-title-link="" data-description="" class="thumbnail"><img src="img/nudes/5.jpg" alt=""/></a></li>
+            <li class="span3"><a href="img/nudes/6.jpg" title="" data-title-link="" data-description="" class="thumbnail"><img src="img/nudes/6.jpg" alt=""/></a></li>
+            <li class="span3"><a href="img/nudes/7.jpg" title="" data-title-link="" data-description="" class="thumbnail"><img src="img/nudes/7.jpg" alt=""/></a></li>
+            <li class="span3"><a href="img/nudes/8.jpg" title="" data-title-link="" data-description="" class="thumbnail"><img src="img/nudes/8.jpg" alt=""/></a></li>
+            <li class="span3"><a href="img/nudes/9.jpg" title="" data-title-link="" data-description="" class="thumbnail"><img src="img/nudes/9.jpg" alt=""/></a></li>
+            <li class="span3"><a href="img/nudes/10.jpg" title="" data-title-link="" data-description="" class="thumbnail"><img src="img/nudes/10.jpg" alt=""/></a></li>
+            <li class="span3"><a href="img/nudes/11.jpg" title="" data-title-link="" data-description="" class="thumbnail"><img src="img/nudes/11.jpg" alt=""/></a></li>
+            <li class="span3"><a href="img/nudes/12.jpg" title="" data-title-link="" data-description="" class="thumbnail"><img src="img/nudes/12.jpg" alt=""/></a></li>
+            <li class="span3"><a href="img/nudes/13.jpg" title="" data-title-link="" data-description="" class="thumbnail"><img src="img/nudes/13.jpg" alt=""/></a></li>
+            <li class="span3"><a href="img/nudes/14.jpg" title="" data-title-link="" data-description="" class="thumbnail"><img src="img/nudes/14.jpg" alt=""/></a></li>
+            <li class="span3"><a href="img/nudes/15.jpg" title="" data-title-link="" data-description="" class="thumbnail"><img src="img/nudes/15.jpg" alt=""/></a></li>
+            <li class="span3"><a href="img/nudes/16.jpg" title="" data-title-link="" data-description="" class="thumbnail"><img src="img/nudes/16.jpg" alt=""/></a></li>
+        </ul>
+    </div>
+  </section>
+</div>
+<div class="container menu">
+    <span class="current_page">home</span>
+    <a href="#">nudes</a>
+    <a href="#">portraits</a>
+    <a href="#">about</a>
+    <a href="#">contact</a>
+</div>
+
+<script src="//code.jquery.com/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script>
+<script src="js/bootstrap.lightbox.js"></script>
+
+<!-- The following external scripts are only included for the example demonstration and are not needed to run the lightbox. -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/prettify/r224/prettify.js"></script>
+
+<script>
+// Load code prettifier
+$(document).ready(function(){
+  prettyPrint();
+});
+
+// Fancy text animation
+var ta = (function(a){
+  var a = $(a), b = a.text(), c = b.length, d = 200;
+  a.empty()
+  for(i=0;i<c;++i){
+    a.append($("<span/>").text(b[i]).fadeIn(1300+(d*i)));
+  }
+})("header p");
+$("abbr[data-toggle=tooltip]").tooltip();
+</script>
+</body>
+</html>
