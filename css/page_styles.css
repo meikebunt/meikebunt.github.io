@@ -144,3 +144,33 @@ a:active {
 .home-main-image{
   width: 705px;
 }
+
+.about-intro{
+  float: right;
+  width: 350px;
+  height: 550px;
+}
+
+.about-intro-content{
+  width: 75%;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.contact{
+  float: right;
+  width: 550px;
+  height: 550px;
+  text-align: center;
+}
+
+.contact-content{
+  padding: 0px 0px 30px;
+  color: white;
+  background: black;
+  width: 45%;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}

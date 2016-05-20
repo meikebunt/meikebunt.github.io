@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+
+  <meta charset="utf-8">
+  <title>Meike Bunt</title>
+
+  <meta name="description" lang="en" content="Photography" />
+  <meta name="author" content="Meike Bunt">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="shortcut icon" type="image/ico" href="favicon.png" />
+
+  <link href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.1/css/bootstrap.min.css" rel="stylesheet" media="screen">
+  <link href="css/bootstrap.lightbox.css" rel="stylesheet" media="screen">
+  <link href="css/page_styles.css" rel="stylesheet" media="screen">
+</head>
+<body data-spy="scroll" data-target=".navbar">
+<div class="container">
+  <section id="main">
+
+    <div class="sidebar-home sidebar">
+      <div class="sidebar-content">
+        <p><b> Meike Bunt </b></p>
+        <p class="subtitle"> PHOTOGRAPHY </p>
+      </div>
+    </div>
+    <div class="span4">
+        <ul class="thumbnails" data-toggle="lightbox">
+            <li><img src="img/meike.jpg" alt=""/></a></li>
+        </ul>
+    </div>
+
+    <div class="span4 about-intro">
+    <p class="about-intro-content">
+      ​For several years I've been
+      photographing. From fashion to
+      portrait and right now my main focus is artistic nude photography.
+<br><br><br><br><br>
+      I love to work with creative people. Women who dare to look ugly or play around. Those are usually the best collaborations!
+<br><br><br><br><br>
+      For me a picture is perfect when people want to take a second look. It needs to trigger the fantasy and imagination. My main inspiration is Dali and surealism.
+      </p>
+    </div>
+
+  </section>
+</div>
+<div class="container menu">
+    <span class="current_page">home</span>
+    <a href="/nudes.html">nudes</a>
+    <a href="/portraits.html">portraits</a>
+    <a href="/about.html">about</a>
+    <a href="/contact.html">contact</a>
+</div>
+
+<script src="//code.jquery.com/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script>
+<script src="js/bootstrap.lightbox.js"></script>
+<script src="js/page.js"></script>
+
+<!-- The following external scripts are only included for the example demonstration and are not needed to run the lightbox. -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/prettify/r224/prettify.js"></script>
+
+<script>
+// Load code prettifier
+$(document).ready(function(){
+  prettyPrint();
+});
+
+// Fancy text animation
+var ta = (function(a){
+  var a = $(a), b = a.text(), c = b.length, d = 200;
+  a.empty()
+  for(i=0;i<c;++i){
+    a.append($("<span/>").text(b[i]).fadeIn(1300+(d*i)));
+  }
+})("header p");
+$("abbr[data-toggle=tooltip]").tooltip();
+</script>
+</body>
+</html>
