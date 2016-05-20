@@ -14,278 +14,47 @@
 
   <link href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.1/css/bootstrap.min.css" rel="stylesheet" media="screen">
   <link href="css/bootstrap.lightbox.css" rel="stylesheet" media="screen">
-  <style>
-/*** Page Styles ***/
-body {
-  padding-top: 40px;
-  padding-bottom: 40px;
-}
-
-section {
-  padding-top: 40px;
-}
-
-/* Jumbotron */
-.jumbotron {
-  position: relative;
-  padding: 70px 0 80px;
-  color: #fff;
-  text-align: center;
-  text-shadow: 0 1px 3px rgba(0,0,0,.4), 0 0 30px rgba(0,0,0,.075);
-  background: #020031; /* Old browsers */
-  background: -moz-linear-gradient(45deg,  #020031 0%, #69c 100%); /* FF3.6+ */
-  background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,#020031), color-stop(100%,#69c)); /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(45deg,  #020031 0%,#69c 100%); /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(45deg,  #020031 0%,#69c 100%); /* Opera 11.10+ */
-  background: -ms-linear-gradient(45deg,  #020031 0%,#69c 100%); /* IE10+ */
-  background: linear-gradient(45deg,  #020031 0%,#69c 100%); /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#020031', endColorstr='#69c',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-  -webkit-box-shadow: inset 0 3px 7px rgba(0,0,0,.2), inset 0 -3px 7px rgba(0,0,0,.2);
-     -moz-box-shadow: inset 0 3px 7px rgba(0,0,0,.2), inset 0 -3px 7px rgba(0,0,0,.2);
-          box-shadow: inset 0 3px 7px rgba(0,0,0,.2), inset 0 -3px 7px rgba(0,0,0,.2);
-}
-.jumbotron h1 {
-  font-size: 80px;
-  font-weight: bold;
-  line-height: 1;
-  letter-spacing: -2px;
-}
-.jumbotron p {
-  font-size: 40px;
-  font-weight: 200;
-  line-height: 1.25;
-  margin-bottom: 30px;
-}
-
-/* Download Button */
-.download-btn {
-  text-align: center;
-}
-.download-btn .btn {
-  padding: 19px 24px;
-  font-size: 24px;
-  font-weight: 200;
-  color: #fff;
-  border: 0;
-  -webkit-border-radius: 6px;
-     -moz-border-radius: 6px;
-          border-radius: 6px;
-  -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.1), 0 1px 5px rgba(0,0,0,.25);
-     -moz-box-shadow: inset 0 1px 0 rgba(255,255,255,.1), 0 1px 5px rgba(0,0,0,.25);
-          box-shadow: inset 0 1px 0 rgba(255,255,255,.1), 0 1px 5px rgba(0,0,0,.25);
-  -webkit-transition: none;
-     -moz-transition: none;
-          transition: none;
-}
-.download-btn .btn:hover {
-  -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.1), 0 1px 5px rgba(0,0,0,.25);
-     -moz-box-shadow: inset 0 1px 0 rgba(255,255,255,.1), 0 1px 5px rgba(0,0,0,.25);
-          box-shadow: inset 0 1px 0 rgba(255,255,255,.1), 0 1px 5px rgba(0,0,0,.25);
-}
-.download-btn .btn:active {
-  -webkit-box-shadow: inset 0 2px 4px rgba(0,0,0,.1), 0 1px 0 rgba(255,255,255,.1);
-     -moz-box-shadow: inset 0 2px 4px rgba(0,0,0,.1), 0 1px 0 rgba(255,255,255,.1);
-          box-shadow: inset 0 2px 4px rgba(0,0,0,.1), 0 1px 0 rgba(255,255,255,.1);
-}
-
-/*** Bootstrap  Pretty Print Styles ***/
-.com { color: #93a1a1; }
-.lit { color: #195f91; }
-.pun, .opn, .clo { color: #93a1a1; }
-.fun { color: #dc322f; }
-.str, .atv { color: #D14; }
-.kwd, .prettyprint .tag { color: #1e347b; }
-.typ, .atn, .dec, .var { color: teal; }
-.pln { color: #48484c; }
-
-.prettyprint {
-  padding: 8px;
-  background-color: #f7f7f9;
-  border: 1px solid #e1e1e8;
-}
-.prettyprint.linenums {
-  -webkit-box-shadow: inset 40px 0 0 #fbfbfc, inset 41px 0 0 #ececf0;
-     -moz-box-shadow: inset 40px 0 0 #fbfbfc, inset 41px 0 0 #ececf0;
-          box-shadow: inset 40px 0 0 #fbfbfc, inset 41px 0 0 #ececf0;
-}
-
-/* Specify class=linenums on a pre to get line numbering */
-ol.linenums {
-  margin: 0 0 0 33px; /* IE indents via margin-left */
-}
-ol.linenums li {
-  padding-left: 12px;
-  color: #bebec5;
-  line-height: 20px;
-  text-shadow: 0 1px 0 #fff;
-}
-
-/* Bootstrap code examples
--------------------------------------------------- */
-
-/* Base class */
-.example {
-  position: relative;
-  margin: 15px 0;
-  padding: 39px 19px 14px;
-  *padding-top: 19px;
-  background-color: #fff;
-  border: 1px solid #ddd;
-  -webkit-border-radius: 4px;
-     -moz-border-radius: 4px;
-          border-radius: 4px;
-}
-
-/* Echo out a label for the example */
-.example:after {
-  content: "Example";
-  position: absolute;
-  top: -1px;
-  left: -1px;
-  padding: 3px 7px;
-  font-size: 12px;
-  font-weight: bold;
-  background-color: #f5f5f5;
-  border: 1px solid #ddd;
-  color: #9da0a4;
-  -webkit-border-radius: 4px 0 4px 0;
-     -moz-border-radius: 4px 0 4px 0;
-          border-radius: 4px 0 4px 0;
-}
-
-/* Remove spacing between an example and it's code */
-.example + .prettyprint {
-  margin-top: -20px;
-  padding-top: 15px;
-}
-
-/* Custom example */
-.example .thumbnails .span3 {
-  width: 210px;
-}
-  </style>
+  <link href="css/page_styles.css" rel="stylesheet" media="screen">
 </head>
 <body data-spy="scroll" data-target=".navbar">
-<p class="hide"><a href="#overview">Skip Navigation</a></p>
-<div class="navbar navbar-inverse navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="brand" href="./">Lightbox for Bootstrap</a>
-          <div class="nav-collapse collapse">
-            <ul class="nav">
-              <li class="">
-                <a href="#overview">Overview</a>
-              </li>
-              </li>
-              <li class="">
-                <a href="#example">Example</a>
-              </li>
-              <li class="">
-                <a href="#markup">Markup</a>
-              </li>
-              <li class="">
-                <a href="#download">Download</a>
-              </li>
-            </ul>
-          </div>
-        </div>
+<div class="container">
+  <section id="main">
+
+    <div class="sidebar">
+      <div class="sidebar-content">
+        <p><b> Meike Bunt </b></p>
+        <p class="subtitle"> PHOTOGRAPHY </p>
       </div>
     </div>
-<header id="top" class="jumbotron subhead">
-  <div class="container">
-    <h1>Lightbox for Bootstrap</h1>
-    <p>It just works</p>
-  </div>
-</header>
-
-<div class="container">
-  <section id="overview">
-    <h2>Overview</h2>
-    <p>Welcome to yet another lightbox plugin for Twitter Bootstrap. This plugin aims to enable your users to view larger, higher resolution images just by clicking on  an image, or group of images and designed to be implemented in Bootstrap with minimal markup.</p>
-    <h3>Why</h3>
-    <p>I wanted a lightbox plugin that with minimal effort , would just work with the bootstrap framework. Unfortunately the existing <a href="http://jbutz.github.com/bootstrap-lightbox/">bootstrap-lightbox</a> plugin did not do that, requiring extra markup, buggy css and javascript, even setting up a collection of images to cycle through was complicated.  Instead of messing around trying to get it to just work, I grabbed the original <a href="http://lokeshdhakar.com/projects/lightbox2/">Lightbox</a> plugin and with a little prodding, I had a lightbox up and running exactly how I wanted. This plugin is an extention of that effort, incorporating ideas from the existing plugins and migrating it over to the Bootstrap framework.</p>
-  </section>
-  <section id="example">
-    <h2>Example</h2>
-    <div class="example">
+    <div class="gallery">
         <ul class="thumbnails" data-toggle="lightbox">
-            <li class="span3"><a href="img/image-1.jpg" title="Image #1" data-title-link="http://google.com" data-description="Lorem ipsum dolor" class="thumbnail"><img src="img/thumb-1.jpg" alt=""/></a></li>
-            <li class="span3"><a href="img/image-2.jpg" title="Image #2" data-title-link="#markup" data-description="Lorem ipsum dolor" class="thumbnail"><img src="img/thumb-2.jpg" alt=""/></a></li>
-            <li class="span3"><a href="img/image-3.jpg" title="Image #3" data-description="Lorem ipsum dolor" class="thumbnail"><img src="img/thumb-3.jpg" alt=""/></a></li>
-            <li class="span3"><a href="img/image-4.jpg" title="Image #4" data-description="Lorem ipsum dolor" class="thumbnail"><img src="img/thumb-4.jpg" alt=""/></a></li>
+            <li class="span3"><a href="img/nudes/1.jpg" title="" data-title-link="" data-description="" class="thumbnail"><img src="img/nudes/1.jpg" alt=""/></a></li>
+            <li class="span3"><a href="img/nudes/2.jpg" title="" data-title-link="" data-description="" class="thumbnail"><img src="img/nudes/2.jpg" alt=""/></a></li>
+            <li class="span3"><a href="img/nudes/3.jpg" title="" data-title-link="" data-description="" class="thumbnail"><img src="img/nudes/3.jpg" alt=""/></a></li>
+            <li class="span3"><a href="img/nudes/4.jpg" title="" data-title-link="" data-description="" class="thumbnail"><img src="img/nudes/4.jpg" alt=""/></a></li>
+            <li class="span3"><a href="img/nudes/5.jpg" title="" data-title-link="" data-description="" class="thumbnail"><img src="img/nudes/5.jpg" alt=""/></a></li>
+            <li class="span3"><a href="img/nudes/6.jpg" title="" data-title-link="" data-description="" class="thumbnail"><img src="img/nudes/6.jpg" alt=""/></a></li>
+            <li class="span3"><a href="img/nudes/7.jpg" title="" data-title-link="" data-description="" class="thumbnail"><img src="img/nudes/7.jpg" alt=""/></a></li>
+            <li class="span3"><a href="img/nudes/8.jpg" title="" data-title-link="" data-description="" class="thumbnail"><img src="img/nudes/8.jpg" alt=""/></a></li>
+            <li class="span3"><a href="img/nudes/9.jpg" title="" data-title-link="" data-description="" class="thumbnail"><img src="img/nudes/9.jpg" alt=""/></a></li>
+            <li class="span3"><a href="img/nudes/10.jpg" title="" data-title-link="" data-description="" class="thumbnail"><img src="img/nudes/10.jpg" alt=""/></a></li>
+            <li class="span3"><a href="img/nudes/11.jpg" title="" data-title-link="" data-description="" class="thumbnail"><img src="img/nudes/11.jpg" alt=""/></a></li>
+            <li class="span3"><a href="img/nudes/12.jpg" title="" data-title-link="" data-description="" class="thumbnail"><img src="img/nudes/12.jpg" alt=""/></a></li>
+            <li class="span3"><a href="img/nudes/13.jpg" title="" data-title-link="" data-description="" class="thumbnail"><img src="img/nudes/13.jpg" alt=""/></a></li>
+            <li class="span3"><a href="img/nudes/14.jpg" title="" data-title-link="" data-description="" class="thumbnail"><img src="img/nudes/14.jpg" alt=""/></a></li>
+            <li class="span3"><a href="img/nudes/15.jpg" title="" data-title-link="" data-description="" class="thumbnail"><img src="img/nudes/15.jpg" alt=""/></a></li>
+            <li class="span3"><a href="img/nudes/16.jpg" title="" data-title-link="" data-description="" class="thumbnail"><img src="img/nudes/16.jpg" alt=""/></a></li>
         </ul>
     </div>
-    <pre class="prettyprint linenums">
-&lt;ul class="thumbnails" data-toggle="lightbox"&gt;
-  &lt;li class="span3"&gt;
-    &lt;a href="img/image-1.jpg" title="Image #1" data-title-link="http://google.com" data-description="Lorem ipsum dolor" class="thumbnail"&gt;
-      &lt;img src="img/thumb-1.jpg" alt=""/&gt;
-    &lt;/a&gt;
-  &lt;/li&gt;
-  &lt;li class="span3"&gt;
-    &lt;a href="img/image-2.jpg" title="Image #2" data-description="Lorem ipsum dolor" class="thumbnail"&gt;
-      &lt;img src="img/thumb-2.jpg" alt=""/&gt;
-    &lt;/a&gt;
-  &lt;/li&gt;
-  &lt;li class="span3"&gt;
-    &lt;a href="img/image-3.jpg" title="Image #3" data-description="Lorem ipsum dolor" class="thumbnail"&gt;
-      &lt;img src="img/thumb-3.jpg" alt=""/&gt;
-    &lt;/a&gt;
-  &lt;/li&gt;
-  &lt;li class="span3"&gt;
-    &lt;a href="img/image-4.jpg" title="Image #4" data-description="Lorem ipsum dolor" class="thumbnail"&gt;
-      &lt;img src="img/thumb-4.jpg" alt=""/&gt;
-    &lt;/a&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-    </pre>
-  </section>
-  <section id="markup">
-    <h2>Markup</h2>
-    <h3>Step 1</h3>
-    <p>Include the CSS and Javascript files</p>
-    <pre class="prettyprint linenums">
-&lt;link href="css/bootstrap.lightbox.css" rel="stylesheet" media="screen"&gt;
-&lt;script src="js/bootstrap.lightbox.js"&gt;&lt;/script&gt;</pre>
-    <h3>Step 2</h3>
-    <p>Add the <code>data-toggle="lightbox"</code> attribute to the <code>thumbnails</code> class element.</p>
-    <pre class="prettyprint linenums">&lt;ul class="thumbnails" data-toggle="lightbox"&gt;&lt;/ul&gt;</pre>
-    <h3>Step 3</h3>
-    <p>Link to a larger image with a <code>href="img/image-1.jpg"</code> link or <code>data-target="img/image-1.jpg"</code> for each <code>thumbnail</code> class element.</p>
-    <pre class="prettyprint linenums">&lt;a href="img/image-1.jpg" class="thumbnail"&gt;&lt;/a&gt;</pre>
-    <pre class="prettyprint linenums">&lt;div data-target="img/image-1.jpg" class="thumbnail"&gt;&lt;/div&gt;</pre>
-    <h3>Optional</h3>
-    <h4>Add a Title</h4>
-    <pre class="prettyprint linenums">&lt;a href="img/image-1.jpg" title="Image 1" class="thumbnail"&gt;&lt;/a&gt;</pre>
-    <pre class="prettyprint linenums">&lt;div data-target="img/image-1.jpg" data-title="Image 1" class="thumbnail"&gt;&lt;/div&gt;</pre>
-    <h4>Add a Link to the Title</h4>
-    <pre class="prettyprint linenums">&lt;a href="img/image-1.jpg" title="Image 1" data-title-link="http://google.com" class="thumbnail"&gt;&lt;/a&gt;</pre>
-    <h4>Add a Description</h4>
-    <pre class="prettyprint linenums">&lt;a href="img/image-1.jpg" data-description="Lorem ipsum dolor" class="thumbnail"&gt;&lt;/a&gt;</pre>
-  </section>
-  <section id="download">
-    <h2>Download</h2>
-    <div class="download-btn">
-        <p><a href="http://github.com/djinteractive/Lightbox-for-Bootstrap/archive/master.zip" class="btn btn-primary btn-large">Download Lightbox for Bootstrap</a></p>
-    </div>
-    <h3>Requirements</h3>
-    <p>jQuery <abbr data-toggle="tooltip" data-placement="top" title="Untested with earlier versions of jQuery">v1.72+</abbr> <code><a href="http://jQuery.com/">http://jQuery.com/</a></code></p>
-    <p>Bootstrap <code><a href="http://twitter.github.com/bootstrap/">http://twitter.github.com/bootstrap/</a></code></p>
-    <h3>License</h3>
-    <p>Licensed under the Creative Commons Attribution 2.5 License <a href="http://creativecommons.org/licenses/by/2.5/">http://creativecommons.org/licenses/by/2.5/</a></p>
-    <h3>Thanks</h3>
-    <p>Based on the original <a href="https://github.com/lokesh/lightbox2/">Lightbox 2</a> by <a href="http://lokeshdhakar.com/">Lokesh Dhakar</a></p>
-    <h3>Alternatives</h3>
-    <p>Bootstrap - Lightbox <code><a href="http://jbutz.github.com/bootstrap-lightbox/">http://jbutz.github.com/bootstrap-lightbox/</a></code></p>
-    <p>Lightbox 2 <code><a href="http://lokeshdhakar.com/projects/lightbox2/">http://lokeshdhakar.com/projects/lightbox2/</a></code></p>
   </section>
 </div>
-
+<div class="container menu">
+    <span class="current_page">home</span>
+    <a href="#">nudes</a>
+    <a href="#">portraits</a>
+    <a href="#">about</a>
+    <a href="#">contact</a>
+</div>
 
 <script src="//code.jquery.com/jquery.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script>

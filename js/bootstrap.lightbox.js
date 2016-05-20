@@ -15,31 +15,6 @@ Licensed under the Creative Commons Attribution 2.5 License - http://creativecom
 - free for use in both personal and commercial projects
 - attribution requires leaving author name, author link, and the license info intact
 
-
-Table of Contents
-=================
-LightboxOptions
-
-Lightbox
-- constructor
-- init
-- enable
-- build
-- start
-- changeImage
-- setTitle
-- sizeContainer
-- showImage
-- updateNav
-- updateDetails
-- preloadNeigbhoringImages
-- enableKeyboardNav
-- disableKeyboardNav
-- keyboardAction
-- end
-
-options = new LightboxOptions
-lightbox = new Lightbox options
 */
 
 
